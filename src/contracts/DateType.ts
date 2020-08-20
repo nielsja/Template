@@ -1,5 +1,5 @@
 export enum DateType {
-  Business,
-  Weekend,
-  Holiday,
+  Business = 'business',
+  Weekend = 'weekend',
+  Holiday = 'holiday',
 }

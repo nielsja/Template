@@ -6,11 +6,18 @@ const app = express();
 
 app.get('/', (request, response) => {
   response.send('Howdy! You reached the app.');
-  // response.sendFile(__dirname + '/index.html');
 });
 
-app.get('*', (request, response) => {
-  response.send('Whoops! No such page exists. Your bad.');
+app.get('/today', (req, res) => {
+  res.send('today');
+});
+
+app.get('/date', (req, res) => {
+  res.send('date');
+});
+
+app.get('/range', (req, res) => {
+  res.send('range');
 });
 
 app.listen(port, () => {
