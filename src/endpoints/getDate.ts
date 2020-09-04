@@ -1,4 +1,4 @@
-import { IDate, DateType } from './contracts';
+import { IDate, DateType } from '../contracts';
 
 export const getDate = (dateStr: string): IDate => {
   return {
