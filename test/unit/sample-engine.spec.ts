@@ -10,7 +10,7 @@ describe('test()', () => {
   });
 });
 
-describe('Test Body', () => {
+describe('testBody()', () => {
   it('should return body as string concatenated with a default message', () => {
     const body = {
       Message: 'test body input message',
@@ -24,7 +24,7 @@ describe('Test Body', () => {
   });
 });
 
-describe('Test Query', () => {
+describe('testQuery()', () => {
   it('should return query params as string concatenated with a default message', () => {
     const query = {
       Key1: 'Value 1',
