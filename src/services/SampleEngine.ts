@@ -1,15 +1,19 @@
-export abstract class SampleEngine {
-  static test(): string {
-    return 'Date Engine test method hit!';
+import { SampleEnum } from '../contracts';
+import { ISampleEngine } from '../services';
+import * as sampleData from '../data/sample-data.json';
+
+export class SampleEngine implements ISampleEngine {
+  method1(): string {
+    return 'number';
+  }
+  method2(): number {
+    return 1;
+  }
+  method3(msg: string = 'default', num: number = 0): void {
+    console.log(msg + num);
   }
 
-  static testBody(body: any): string {
-    var bodyString = JSON.stringify(body);
-    return `Body Object: ${bodyString}`;
-  }
-
-  static testQuery(query: any): string {
-    let queryString = JSON.stringify(query);
-    return `Query Params: ${queryString}`;
+  method4(): boolean {
+    return sampleData == null;
   }
 }

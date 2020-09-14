@@ -1,2 +1,2 @@
-export * from './DateType';
-export * from './IDate';
+export * from './ISampleType';
+export * from './SampleEnum';
